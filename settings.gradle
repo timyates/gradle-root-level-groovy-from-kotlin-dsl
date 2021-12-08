@@ -1,0 +1,12 @@
+include('groovy')
+include('kotlin')
+
+enableFeaturePreview('VERSION_CATALOGS')
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            alias('shared').to('com.bloidonia:ascii-image:1.1')
+        }
+    }
+}
